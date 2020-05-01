@@ -44,10 +44,11 @@ public class test {
 
             AVLTree<String, Integer> avl = new AVLTree<>();
             for (String word : words) {
-                if (avl.contains(word))
+                if (avl.contains(word)) {
                     avl.set(word, avl.get(word) + 1);
-                else
+                } else {
                     avl.add(word, 1);
+                }
             }
 
             for (String word : words) {
